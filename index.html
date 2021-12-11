@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>Final Project. Front End Class.</title>
+
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700" rel="stylesheet">
+		<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css"/>
+		<link type="text/css" rel="stylesheet" href="css/slick.css"/>
+		<link type="text/css" rel="stylesheet" href="css/slick-theme.css"/>
+		<link type="text/css" rel="stylesheet" href="css/nouislider.min.css"/>
+		<link type="text/css" rel="stylesheet" href="css/style.css"/>
+    </head>
+	<body>
+		<!-- HEADER -->
+		<header>
+			<!-- TOP HEADER -->
+			<div id="top-header">
+				<div class="container">
+					<ul class="header-links pull-left">
+						<li><a href="#"><i class="fa fa-phone"></i>+49 (0)123 456 78 90</a></li>
+						<li><a href="#"><i class="fa fa-envelope-o"></i>hello@hello-example.org</a></li>
+						<li><a href="#"><i class="fa fa-map-marker"></i>Balanstraße  / Haus  / 81541 München</a></li>
+					</ul>
+					<ul class="header-links pull-right">
+						<!-- <li><a href="#"><i class="fa fa-dollar"></i> USD</a></li> -->
+						<li><a  href="card.html"><i class="fa fa-user-o"></i> My Account</a></li>
+					</ul>
+				</div>
+			</div>
+			<!-- /TOP HEADER -->
+
+			<!-- MAIN HEADER -->
+			<div id="header">
+				<!-- container -->
+				<div class="container">
+					<!-- row -->
+					<div class="row">
+						<!-- LOGO -->
+						<div class="col-md-3">
+							<div class="header-logo">
+								<a href="index.html" class="logo">
+									<img height="33.9" width="115" src="https://upload.wikimedia.org/wikipedia/commons/5/52/Free_logo.svg" alt="logo">
+								</a>
+							</div>
+						</div>
+						<!-- /LOGO -->
+
+						<!-- SEARCH BAR -->
+						<div class="col-md-6">
+							<div class="header-search">								
+								<input class="form-control me-2" type="search" placeholder="Search for Movies, Events, Plays, Sports and Activities" aria-label="Search">
+							</div>
+						</div>
+						<!-- /SEARCH BAR -->
+
+						<!-- ACCOUNT -->
+						<div class="col-md-3 clearfix">
+							<div class="header-ctn">
+								<!-- Cart -->
+								<div class="dropdown">
+									<a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
+										<input class="btn primary-btn" type="submit" value="Sign up">
+									</a>
+									<div class="cart-dropdown">
+										<div class="cart-list">
+											<div class="item_form">
+												<h4>New user</h4>							
+												<form class="review-form" name="myForm" action="#" method="GET">
+													<div>
+														<input placeholder="First name:" type="text" id="first_name" name="first_name" required>
+													</div>
+													<div>
+														<input placeholder="Last name:" type="text" id="last_name" name="last_name" required>
+													</div>
+													<div>
+														<input placeholder="E-mail:" type="email" id="email" name="email" required>
+													</div>
+													<div>
+														<input placeholder="Password:" type="password" id="Password" name="Password">
+													</div>
+													<div>
+														<select id="country" name="country">
+															<option value="empty">Country of residence:</option>
+															<option value="deu">Deutschland</option>
+															<option value="rus">Russland</option>
+															<option value="eng">England</option>
+															<option value="som">Somalia</option>
+															<option value="dun">Duna</option>
+														</select>
+													</div>
+													<input id="inptBtn" class=" align-self-center btn primary-btn" type="submit" value="Submit">
+												</form>
+																
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- /Cart -->
+
+								<!-- Menu Toogle -->
+								<div class="menu-toggle">
+									<a href="#">
+										<i class="fa fa-bars"></i>
+										<span>Menu</span>
+									</a>
+								</div>
+								<!-- /Menu Toogle -->
+							</div>
+						</div>
+						<!-- /ACCOUNT -->
+					</div>
+					<!-- row -->
+				</div>
+				<!-- container -->
+			</div>
+			<!-- /MAIN HEADER -->
+		</header>
+		<!-- /HEADER -->
+
+		<!-- NAVIGATION -->
+		<nav id="navigation">
+			<!-- container -->
+			<div class="container">
+				<!-- responsive-nav -->
+				<div id="responsive-nav">
+					<!-- NAV -->
+					<ul class="main-nav nav navbar-nav">
+						<li><a href="index.html">Home</a></li>
+						<li><a href="#Premieres">Movies</a></li>
+						<li><a href="#">Stream</a></li>
+						<li><a href="#">Events</a></li>
+						<li><a href="#">Plays</a></li>
+						<li><a href="#">Sports</a></li>
+						<li><a href="#">Activities</a></li>
+						<li><a href="#">Buzz</a></li>
+					</ul>
+					<ul class="main-nav nav navbar-nav position-relative">
+						<li><a href="#">ListYourShow</a></li>
+						<li><a href="#">Corporates</a></li>
+						<li><a href="#">Offers</a></li>
+						<li><a href="#">Gift Cards</a></li>
+					</ul>
+					<!-- /NAV -->
+				</div>
+				<!-- /responsive-nav -->
+			</div>
+			<!-- /container -->
+		</nav>
+		<!-- /NAVIGATION -->
+
+		<!-- SECTION -->
+		<div class="section">
+			<!-- container -->
+			<div class="container">
+				<div class="section-title">
+					<h3 class="title">The Best of Entertainment</h3>
+				</div>
+				
+				<!-- row -->
+				<div class="row ">
+					<!-- shop -->
+					<div class="col-md-2 col-xs-4">
+						<div class="shop">
+							<a href="https://in.bookmyshow.com/explore/workshops-chamba?referrerBase=">
+								<div class="shop-img">
+									<img src="https://in.bmscdn.com/discovery-catalog/collections/tr:w-800,h-800:ote-MTAwKyBFdmVudHM%3D,otc-FFFFFF,otf-Roboto,ots-64,ox-48,oy-320,ott-b:w-300/workshops-collection-202007231330.png" alt="">
+								</div>
+							</a>
+						</div>
+					</div>
+					<!-- /shop -->
+
+					<!-- shop -->
+					<div class="col-md-2 col-xs-4">
+						<div class="shop">
+							<a href="https://in.bookmyshow.com/explore/health-and-fitness-chamba?referrerBase=">
+								<div class="shop-img">
+									<img src="https://in.bmscdn.com/discovery-catalog/collections/tr:w-800,h-800:ote-OSBFdmVudHM%3D,otc-FFFFFF,otf-Roboto,ots-64,ox-48,oy-320,ott-b:w-300/fitness-collection-2020081150.png" alt="" width="100%" height="100%">
+								</div>
+							</a>
+						</div>
+					</div>
+					<!-- /shop -->
+
+					<!-- shop -->
+					<div class="col-md-2 col-xs-4">
+						<div class="shop">
+							<a href="https://in.bookmyshow.com/explore/kids-chamba?referrerBase=">
+								<div class="shop-img">
+									<img src="https://in.bmscdn.com/discovery-catalog/collections/tr:w-800,h-800:ote-MTArIEV2ZW50cw%3D%3D,otc-FFFFFF,otf-Roboto,ots-64,ox-48,oy-320,ott-b:w-300/kids-collection-202007220710.png" alt="" width="100%" height="100%">
+								</div>
+							</a>
+						</div>
+					</div>
+					<!-- /shop -->
+
+					<!-- shop -->
+					<div class="col-md-2 col-xs-4">
+						<div class="shop">
+							<a href="https://in.bookmyshow.com/explore/comedy-shows-chamba?referrerBase=">
+								<div class="shop-img">
+									<img src="https://in.bmscdn.com/discovery-catalog/collections/tr:w-800,h-800:ote-MTArIEV2ZW50cw%3D%3D,otc-FFFFFF,otf-Roboto,ots-64,ox-48,oy-320,ott-b:w-300/comedy-shows-collection-202007220710.png" alt="" width="100%" height="100%">
+								</div>
+							</a>
+						</div>
+					</div>
+					<!-- /shop -->
+					<!-- shop -->
+					<div class="col-md-2 col-xs-4">
+						<div class="shop">
+							<a href="https://in.bookmyshow.com/explore/health-and-fitness-chamba?referrerBase=">
+								<div class="shop-img">
+									<img src="https://in.bmscdn.com/discovery-catalog/collections/tr:w-800,h-800:w-300/cooking-collection-202007222211.png" alt="" width="100%" height="100%">
+								</div>
+							</a>
+						</div>
+					</div>
+					<!-- /shop -->
+					<!-- shop -->
+					<div class="col-md-2 col-xs-4">
+						<div class="shop">
+							<a href="https://in.bookmyshow.com/explore/music-shows-chamba?referrerBase=">
+								<div class="shop-img">
+									<img src="https://in.bmscdn.com/discovery-catalog/collections/tr:w-800,h-800:ote-NyBFdmVudHM%3D,otc-FFFFFF,otf-Roboto,ots-64,ox-48,oy-320,ott-b:w-300/music-shows-collection-202007220710.png" alt="" width="100%" height="100%">
+								</div>
+							</a>
+						</div>
+					</div>
+					<!-- /shop -->
+				</div>
+				<!-- /row -->
+			</div>
+			<!-- /container -->
+		</div>
+		<!-- /SECTION -->
+
+		<!-- SECTION -->
+		<div class="section">
+			<!-- container -->
+			<div class="container">
+				<!-- row -->
+				<div id="Premieres" class="row">
+
+					<!-- section title -->
+					<div class="col-md-12">
+						<div class="section-title">
+							<h3 class="title">Premieres</h3>
+							<h4>Brand new releases every Friday</h4>
+						</div>
+					</div>
+					<!-- /section title -->
+
+					<!-- films tab & slick -->
+					<div class="col-md-12">
+						<div class="row">
+							<div class="films-tabs">
+								<!-- tab -->
+								<div id="tab1" class="tab-pane active">
+									<div class="films-slick" data-nav="#slick-nav-1">
+										<!-- film -->
+										<div class="film Ammonite">
+											<a class="Ammonite" href="film.html">
+												<div class="film-img">
+													<img alt="Escape Room: Tournament Of Ammonite" width="100%" height="100%" class="sc-eykeme-1 jbzDld Ammonite-img" style="border-radius: 0px; opacity: 1; transition: all 0.5s ease 0s; width: 100%; min-height: inherit; max-height: inherit;" src="https://in.bmscdn.com/iedb/movies/images/extra/vertical_logo/mobile/thumbnail/xxlarge/ammonite-et00310901-19-05-2021-03-29-52.jpg">
+												</div>
+												<div class="film-body">
+													<h3 class="film-name Ammonite-name">Ammonite</h3>
+													<p class="film-description Ammonite-description" style="display: none;">In 1840s England, an infamous fossil hunter and a young woman sent to recover her health by the sea develop an intense relationship, altering both of their lives forever.</p>
+													<p class="film-category Ammonite-lang">English</p>
+													<div class="film-rating Ammonite-rating">
+														<i class="fa fa-star"></i>
+														<i class="fa fa-star"></i>
+														<i class="fa fa-star"></i>
+														<i class="fa fa-star"></i>
+														<i class="fa fa-star"></i>
+													</div>
+												</div>
+											</a>
+										</div>
+										<!-- /film -->
+										<!-- film -->
+										<div class="film Secrets ">
+											<a class="Secrets" href="film.html">
+												<div class="film-img">
+													<img alt="The Secrets We Keep" width="100%" height="100%" class="sc-eykeme-1 jbzDld Secrets-img" style="border-radius: 0px; opacity: 1; transition: all 0.5s ease 0s; width: 100%; min-height: inherit; max-height: inherit;" src="https://in.bmscdn.com/iedb/movies/images/extra/vertical_logo/mobile/thumbnail/xxlarge/the-secrets-we-keep-et00137312-20-05-2021-10-39-32.jpg">
+												</div>
+												<div class="film-body">
+													<h3 class="film-name Secrets-name">The Secrets We Keep</h3>
+													<p class="film-description Secrets-description" style="display: none;">In post-WWII America, a woman who is rebuilding her life in the suburbs, kidnaps her neighbor and seeks vengeance for the heinous war crimes she believes he committed against her.</p>
+													<p class="film-category Secrets-lang">English</p>
+													<div class="film-rating Secrets-rating">
+														<i class="fa fa-star"></i>
+														<i class="fa fa-star"></i>
+														<i class="fa fa-star"></i>
+														<i class="fa fa-star"></i>
+														<i class="fa fa-star-o"></i>
+													</div>
+												</div>
+											</a>
+										</div>
+										<!-- /film -->
+
+										<!-- film -->
+										<div class="film Nobody">
+											<a href="film.html"></a>
+												<div class="film-img">
+													<img alt="Nobody" width="100%" height="100%" class="sc-eykeme-1 jbzDld Nobody-img" style="border-radius: 0px; opacity: 1; transition: all 0.5s ease 0s; width: 100%; min-height: inherit; max-height: inherit;" src="https://in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:oi-discovery-catalog@@icons@@premiere-icon.png,ox-322,oy-20/et00122451-ebbbdcqkdm-portrait.jpg">
+												</div>
+												<div class="film-body">
+													<h3 class="film-name Nobody-name">Nobody</h3>
+													<p class="film-description Nobody-description" style="display: none;">Sometimes the man you don`t notice is the most dangerous of all. Hutch Mansell, a nobody, must save his family from a dangerous adversary and ensure that he will never be underestimated as a nobody again.</p>
+													<p class="film-category Nobody-lang">English</p>
+													<div class="film-rating Nobody-rating">
+														<i class="fa fa-star"></i>
+														<i class="fa fa-star"></i>
+														<i class="fa fa-star-o"></i>
+													</div>
+												</div>
+											</a>	
+										</div>
+										<!-- /film -->
+
+										<!-- film -->
+										<div class="film Venom">
+											<a href="film.html"></a>											
+												<div class="film-img">
+													<img alt="Venom: Let There Be Carnage" width="100%" height="100%" class="sc-eykeme-1 jbzDld Venom-img" style="border-radius: 0px; opacity: 1; transition: all 0.5s ease 0s; width: 100%; min-height: inherit; max-height: inherit;" src="https://in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:oi-discovery-catalog@@icons@@premiere-icon.png,ox-322,oy-20/et00122532-sceuqzhksu-portrait.jpg">											
+												</div>
+												<div class="film-body">
+													<h3 class="film-name Venom-name">Venom: Let There Be Carnage</h3>
+													<p class="film-description Venom-description" style="display: none;">Feature adaptation of Frank Herbert`s science fiction novel, Dune revolves around Paul Atreides, who leads nomadic tribes in a battle to control the desert planet Arrakis.</p>
+													<p class="film-category Venom-lang">English</p>
+													<div class="film-rating Venom-rating">
+														<i class="fa fa-star"></i>
+														<i class="fa fa-star"></i>
+														<i class="fa fa-star"></i>
+														<i class="fa fa-star"></i>
+														<i class="fa fa-star-o"></i>
+													</div>
+												</div>
+											</a>	
+										</div>
+										<!-- /film -->
+										<!-- film -->
+										<div class="film Dune">
+											<a href="film.html">
+												<div class="film-img">
+													<img alt="Dune" width="100%" height="100%" class="sc-eykeme-1 jbzDld Dune-img" style="border-radius: 0px; opacity: 1; transition: all 0.5s ease 0s; width: 100%; min-height: inherit; max-height: inherit;" src="https://in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:oi-discovery-catalog@@icons@@premiere-icon.png,ox-322,oy-20/et00122526-lxernvglut-portrait.jpg">	
+												</div>										
+												<div class="film-body">
+													<h3 class="film-name Dune-name">Dune</h3>
+													<p class="film-description Dune-description" style="display: none;">Feature adaptation of Frank Herbert`s science fiction novel, Dune revolves around Paul Atreides, who leads nomadic tribes in a battle to control the desert planet Arrakis.</p>
+													<p class="film-category Dune-lang">English</p>
+													<div class="film-rating Dune-rating">
+														<i class="fa fa-star"></i>
+														<i class="fa fa-star"></i>
+														<i class="fa fa-star"></i>
+														<i class="fa fa-star"></i>
+														<i class="fa fa-star"></i>
+													</div>
+												</div>
+											</a>
+										</div>
+										<!-- /film -->
+										<div class="film Kabullywood">
+											<a href="film.html">
+												<div class="film-img">
+													<img alt="Kabullywood" width="100%" height="100%" class="sc-eykeme-1 jbzDld Kabullywood-img" style="border-radius: 0px; opacity: 1; transition: all 0.5s ease 0s; width: 100%; min-height: inherit; max-height: inherit;" src="https://in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:oi-discovery-catalog@@icons@@premiere-icon.png,ox-322,oy-20/et00301282-dnzbnayacy-portrait.jpg">
+												</div>	
+												<div class="film-body">
+													<h3 class="film-name Kabullywood-name">Kabullywood</h3>
+													<p class="film-description Kabullywood-description" style="display: none;">Amidst the ruins of war-torn Kabul, a group of art students decide to renovate an abandoned cinema as an act of resistance but serious problems soon arise.</p>
+													<p class="film-category Kabullywood-lang">Farsi</p>
+													<div class="film-rating Kabullywood-rating">
+														<i class="fa fa-star"></i>
+														<i class="fa fa-star"></i>
+														<i class="fa fa-star"></i>
+														<i class="fa fa-star"></i>
+														<i class="fa fa-star"></i>
+													</div>
+												</div>
+											</a>
+										</div>
+										<!-- /film -->
+										
+
+																				
+									</div>
+									<div id="slick-nav-1" class="films-slick-nav"></div>
+								</div>
+								<!-- /tab -->
+							</div>
+						</div>
+					</div>
+					<!-- films tab & slick -->
+				</div>
+				<!-- /row -->
+			</div>
+			<!-- /container -->
+		</div>
+		<!-- /SECTION -->
+
+		<!-- COUNTDOWN SECTION -->
+		<div id="countdown-section" class="section">
+			<!-- container -->
+			<div class="">
+				<!-- row -->
+				<div class="row">
+					<div class="col-md-12">
+						<div class="hot-deal">
+							<ul class="hot-deal-countdown">
+								<li>
+									<div>
+										<h3 id="days"></h3>
+										<span>Days</span>
+									</div>
+								</li>
+								<li>
+									<div>
+										<h3 id="hours"></h3>
+										<span>Hours</span>
+									</div>
+								</li>
+								<li>
+									<div>
+										<h3 id="mins"></h3>
+										<span>Mins</span>
+									</div>
+								</li>
+								<li>
+									<div>
+										<h3 id="secs"></h3>
+										<span>Secs</span>
+									</div>
+								</li>
+							</ul>
+							<h2 class="text-uppercase">time to new arrivals</h2>
+							<!-- <p>New Collection soon</p> -->
+							<a class="btn primary-btn cta-btn" href="#">See whats new</a>
+						</div>
+					</div>
+				</div>
+				<!-- /row -->
+			</div>
+			<!-- /container -->
+		</div>
+		<!-- /COUNTDOWN SECTION -->
+
+		
+
+		<!-- NEWSLETTER -->
+		<div id="newsletter" class="section">
+			<!-- container -->
+			<div class="container">
+				<!-- row -->
+				<div class="row">
+					<div class="col-md-12">
+						<div class="newsletter">
+							<p>Sign Up for the <strong>NEW ARRIVALS</strong></p>
+							<form>
+								<input class="input" type="email" placeholder="Enter Your Email">
+								<button class="newsletter-btn"><i class="fa fa-envelope"></i> Subscribe</button>
+							</form>
+							<ul class="newsletter-follow">
+								<li>
+									<a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
+								</li>
+								<li>
+									<a href="https://twitter.com/twitterde?lang=de"><i class="fa fa-twitter"></i></a>
+								</li>
+								<li>
+									<a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- /row -->
+			</div>
+			<!-- /container -->
+		</div>
+		<!-- /NEWSLETTER -->
+
+		<!-- FOOTER -->
+		<footer id="footer">
+			<!-- top footer -->
+			<div class="section">
+				<!-- container -->
+				<div class="container">
+					<!-- row -->
+					<div class="row">
+						<div class="col-md-6 col-xs-6">
+							<div class="footer">
+								<h3 class="footer-title">About Us</h3>
+								<ul class="footer-links">
+									<li><i class="fas fa-desktop"></i>Final Project. Front End Class</li>
+									<li><i class="fas fa-user-graduate"></i>Student - Salawat Arslanow</li>
+									<li><i class="fas fa-chalkboard-teacher"></i>Mentor - Lavanya Khamitkar</li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="col-md-6 col-xs-6">
+							<div class="footer">
+								<h3 class="footer-title">Information</h3>
+								<ul class="footer-links">
+									<li><a href="#"><i class="fa fa-phone"></i>+49 (0)123 456 78 90</a></li>
+									<li><a href="#"><i class="fa fa-envelope-o"></i>hello@hello-example.org</a></li>
+									<li><a href="#"><i class="fa fa-map-marker"></i>Balanstraße  / Haus  / 81541 München</a></li>
+											</ul>
+							</div>
+						</div>
+					</div>					
+					<!-- /row -->
+				</div>
+				<!-- /container -->
+			</div>
+			<!-- /top footer -->			
+		</footer>
+		<!-- /FOOTER -->
+
+		<!-- js Plugins -->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/slick.min.js"></script>
+		<script src="js/nouislider.min.js"></script> 
+		<script src="js/main.js"></script>
+		<script src="js/countdown.js"></script>
+		<script src="https://kit.fontawesome.com/15b34fe050.js" crossorigin="anonymous"></script>
+
+	</body>
+</html>

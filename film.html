@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>Final Project. Front End Class.</title>
+
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700" rel="stylesheet">
+		<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css"/>
+		<link type="text/css" rel="stylesheet" href="css/slick.css"/>
+		<link type="text/css" rel="stylesheet" href="css/slick-theme.css"/>
+		<link type="text/css" rel="stylesheet" href="css/nouislider.min.css"/>
+		<link type="text/css" rel="stylesheet" href="css/style.css"/>
+    </head>
+	<body>
+		<!-- HEADER -->
+		<header>
+			<!-- TOP HEADER -->
+			<div id="top-header">
+				<div class="container">
+					<ul class="header-links pull-left">
+						<li><a href="#"><i class="fa fa-phone"></i>+49 (0)123 456 78 90</a></li>
+						<li><a href="#"><i class="fa fa-envelope-o"></i>hello@hello-example.org</a></li>
+						<li><a href="#"><i class="fa fa-map-marker"></i>Balanstraße  / Haus  / 81541 München</a></li>
+					</ul>
+					<ul class="header-links pull-right">
+						<!-- <li><a href="#"><i class="fa fa-dollar"></i> USD</a></li> -->
+						<li><a  href="card.html"><i class="fa fa-user-o"></i> My Account</a></li>
+					</ul>
+				</div>
+			</div>
+			<!-- /TOP HEADER -->
+
+			<!-- MAIN HEADER -->
+			<div id="header">
+				<!-- container -->
+				<div class="container">
+					<!-- row -->
+					<div class="row">
+						<!-- LOGO -->
+						<div class="col-md-3">
+							<div class="header-logo">
+								<a href="index.html" class="logo">
+									<img height="40" width="115" src="https://upload.wikimedia.org/wikipedia/commons/5/52/Free_logo.svg" alt="logo">
+								</a>
+							</div>
+						</div>
+						<!-- /LOGO -->
+
+						<!-- SEARCH BAR -->
+						<div class="col-md-6">
+							<div class="header-search">								
+								<input class="form-control me-2" type="search" placeholder="Search for Movies, Events, Plays, Sports and Activities" aria-label="Search">
+							</div>
+						</div>
+						<!-- /SEARCH BAR -->
+
+						<!-- ACCOUNT -->
+						<div class="col-md-3 clearfix">
+							<div class="header-ctn">
+								<!-- Cart -->
+								<div class="dropdown">
+									<a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
+										<input class="btn primary-btn" type="submit" value="Sign up">
+									</a>
+									<div class="cart-dropdown">
+										<div class="cart-list">
+											<div class="item_form">
+												<h4>New user</h4>							
+												<form class="review-form" name="myForm" action="#" method="GET">
+													<div>
+														<input placeholder="First name:" type="text" id="first_name" name="first_name" required>
+													</div>
+													<div>
+														<input placeholder="Last name:" type="text" id="last_name" name="last_name" required>
+													</div>
+													<div>
+														<input placeholder="E-mail:" type="email" id="email" name="email" required>
+													</div>
+													<div>
+														<input placeholder="Password:" type="password" id="Password" name="Password">
+													</div>
+													<div>
+														<select id="country" name="country">
+															<option value="empty">Country of residence:</option>
+															<option value="deu">Deutschland</option>
+															<option value="rus">Russland</option>
+															<option value="eng">England</option>
+															<option value="som">Somalia</option>
+															<option value="dun">Duna</option>
+														</select>
+													</div>
+													<input id="inptBtn" class=" align-self-center btn primary-btn" type="submit" value="Submit">
+												</form>
+																
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- /Cart -->
+
+								<!-- Menu Toogle -->
+								<div class="menu-toggle">
+									<a href="#">
+										<i class="fa fa-bars"></i>
+										<span>Menu</span>
+									</a>
+								</div>
+								<!-- /Menu Toogle -->
+							</div>
+						</div>
+						<!-- /ACCOUNT -->
+					</div>
+					<!-- row -->
+				</div>
+				<!-- container -->
+			</div>
+			<!-- /MAIN HEADER -->
+		</header>
+		<!-- /HEADER -->
+
+		<!-- NAVIGATION -->
+		<nav id="navigation">
+			<!-- container -->
+			<div class="container">
+				<!-- responsive-nav -->
+				<div id="responsive-nav">
+					<!-- NAV -->
+					<ul class="main-nav nav navbar-nav">
+						<li><a href="index.html">Home</a></li>
+						<li><a href="index.html #Premieres">Movies</a></li>
+						<li><a href="#">Stream</a></li>
+						<li><a href="#">Events</a></li>
+						<li><a href="#">Plays</a></li>
+						<li><a href="#">Sports</a></li>
+						<li><a href="#">Activities</a></li>
+						<li><a href="#">Buzz</a></li>
+					</ul>
+					<ul class="main-nav nav navbar-nav pull-right position-relative">
+						<li>
+							<a href="#">ListYourShow</a>
+						</li>
+						<li><a href="#">Corporates</a></li>
+						<li><a href="#">Offers</a></li>
+						<li><a href="#">Gift Cards</a></li>
+					</ul>
+					<!-- /NAV -->
+				</div>
+				<!-- /responsive-nav -->
+			</div>
+			<!-- /container -->
+		</nav>
+		<!-- /NAVIGATION -->
+
+		<!-- SECTION -->
+		<div class="section decription">
+			<!-- container -->
+			<div class="container">
+				<!-- row -->
+				<div class="row justify-content-center">
+					<!-- film main img -->
+					<div class="col-md-12 film-mg">
+						<div class="row justify-content-center">
+							<div class="col-md-4 col-xs-4">
+								<div id="film-main-img">
+									<div class="film-preview">
+										<img id="newImgSrc" src="" alt="Film img">
+									</div>
+								</div>
+							</div>
+							<!-- /film main img -->
+
+							
+
+							<!-- film details -->
+							<div class="col-md-6 col-xs-6">
+								<div class="film-details">
+									<h2 class="film-name">Venom: Let There Be Carnage</h2>
+									<div>
+										<div class="film-rating">
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star-o"></i>
+										</div>
+										<a class="review-link" data-toggle="tab" href="#tab2">3 Review(s) | Add your review</a>
+									</div>
+									<br>
+									<p class="film-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+									<br>	
+									<ul class="film-btns">
+										<li><a href="#"><i class="fa fa-heart-o"></i> Add to wishlist</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- /film details -->
+
+					<!-- film tab -->
+					<div class="col-md-12">
+						<div id="film-tab">
+							<!-- film tab nav -->
+							<ul class="tab-nav">
+								<li class="active"><a data-toggle="tab" href="#tab1">Description</a></li>
+								<li><a data-toggle="tab" href="#tab2">Reviews (3)</a></li>
+							</ul>
+							<!-- /film tab nav -->
+
+							<!-- film tab content -->
+							<div class="tab-content">
+								<!-- tab1  -->
+								<div id="tab1" class="tab-pane fade in active">
+									<div class="row">
+										<div class="col-md-12">
+											<p class="film-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+										</div>
+									</div>
+								</div>
+								<!-- /tab1  -->
+
+								<!-- tab2  -->
+								<div id="tab2" class="tab-pane fade in">
+									<div class="row">
+										<!-- Rating -->
+										<div class="col-md-3">
+											<div id="rating">
+												<div class="rating-avg">
+													<span>4.0</span>
+													<div class="rating-stars">
+														<i class="fa fa-star"></i>
+														<i class="fa fa-star"></i>
+														<i class="fa fa-star"></i>
+														<i class="fa fa-star"></i>
+														<i class="fa fa-star-o"></i>
+													</div>
+												</div>
+												<ul class="rating">
+													<li class="rating-5" >
+														<div class="rating-stars">
+															<i class="fa fa-star"></i>
+															<i class="fa fa-star"></i>
+															<i class="fa fa-star"></i>
+															<i class="fa fa-star"></i>
+															<i class="fa fa-star"></i>
+														</div>
+														<div class="rating-progress">
+															<div style="width: 33%;"></div>
+														</div>
+														<span class="sum">1</span>
+													</li>
+													<li class="rating-4">
+														<div class="rating-stars">
+															<i class="fa fa-star"></i>
+															<i class="fa fa-star"></i>
+															<i class="fa fa-star"></i>
+															<i class="fa fa-star"></i>
+															<i class="fa fa-star-o"></i>
+														</div>
+														<div class="rating-progress">
+															<div style="width: 66%;"></div>
+														</div>
+														<span class="sum">2</span>
+													</li>
+													<li  class="rating-3">
+														<div class="rating-stars">
+															<i class="fa fa-star"></i>
+															<i class="fa fa-star"></i>
+															<i class="fa fa-star"></i>
+															<i class="fa fa-star-o"></i>
+															<i class="fa fa-star-o"></i>
+														</div>
+														<div class="rating-progress">
+															<div style="width: 0%;"></div>
+														</div>
+														<span class="sum">0</span>
+													</li>
+													<li  class="rating-2">
+														<div class="rating-stars">
+															<i class="fa fa-star"></i>
+															<i class="fa fa-star"></i>
+															<i class="fa fa-star-o"></i>
+															<i class="fa fa-star-o"></i>
+															<i class="fa fa-star-o"></i>
+														</div>
+														<div class="rating-progress">
+															<div style="width: 0%;"></div>
+														</div>
+														<span class="sum">0</span>
+													</li>
+													<li class="rating-1">
+														<div class="rating-stars">
+															<i class="fa fa-star"></i>
+															<i class="fa fa-star-o"></i>
+															<i class="fa fa-star-o"></i>
+															<i class="fa fa-star-o"></i>
+															<i class="fa fa-star-o"></i>
+														</div>
+														<div class="rating-progress">
+															<div style="width: 0%;"></div>
+														</div>
+														<span class="sum">0</span>
+													</li>
+												</ul>
+											</div>
+										</div>
+										<!-- /Rating -->
+
+										<!-- Reviews -->
+										<div class="col-md-6">
+											<div id="reviews">
+												<ul class="reviews">
+													<li>
+														<div class="review-heading">
+															<h5 class="name">Martin</h5>
+															<p class="date">3-12-2021</p>
+															<div class="review-rating">
+																<i class="fa fa-star"></i>
+																<i class="fa fa-star"></i>
+																<i class="fa fa-star"></i>
+																<i class="fa fa-star"></i>
+																<i class="fa fa-star-o empty"></i>
+															</div>
+														</div>
+														<div class="review-body">
+															<p>Grab some popcorn, action fans -- if you're in the mood for creative stunts and a funny, violent, fast-paced story, this film delivers.</p>
+														</div>
+													</li>
+													<li>
+														<div class="review-heading">
+															<h5 class="name">Sasha</h5>
+															<p class="date">02-12-2021</p>
+															<div class="review-rating">
+																<i class="fa fa-star"></i>
+																<i class="fa fa-star"></i>
+																<i class="fa fa-star"></i>
+																<i class="fa fa-star"></i>
+																<i class="fa fa-star"></i>
+															</div>
+														</div>
+														<div class="review-body">
+															<p>It looks and sounds amazing -- and once the (admittedly slow-building) story gets you hooked, you'll be on the edge of your seat for the sequel.</p>
+														</div>
+													</li>
+													<li>
+														<div class="review-heading">
+															<h5 class="name">John</h5>
+															<p class="date">01-12-2021</p>
+															<div class="review-rating">
+																<i class="fa fa-star"></i>
+																<i class="fa fa-star"></i>
+																<i class="fa fa-star"></i>
+																<i class="fa fa-star"></i>
+																<i class="fa fa-star-o empty"></i>
+															</div>
+														</div>
+														<div class="review-body">
+															<p>It has a few intriguing ideas, but they -- and some game performances from its talented stars -- are lost in the movie's muddled plot and frustrating pacing</p>
+														</div>
+													</li>
+
+													<li>
+														<div class="review-heading">
+															<h5 class="name name-insert"></h5>
+															<p class="date date-insert"></p>
+															<div class="review-rating rating-insert"></div>
+														</div>
+														<div class="review-body review-insert">
+															<p></p>
+														</div>
+													</li>
+												</ul>
+											</div>
+										</div>
+										<!-- /Reviews -->
+
+										<!-- Review Form -->
+										<div class="col-md-3">
+											<div id="review-form">
+												<form name="review-form" class="review-form" action="#" method="GET">
+													<input name="Yname" class="input" type="text" placeholder="Your Name">
+													<textarea name="Ytext" class="input" placeholder="Your Review"></textarea>
+													<div class="input-rating">
+														<span>Your Rating: </span>
+														<div class="stars">
+															<input id="star5" name="rating" value="5" type="radio"><label for="star5"></label>
+															<input id="star4" name="rating" value="4" type="radio"><label for="star4"></label>
+															<input id="star3" name="rating" value="3" type="radio"><label for="star3"></label>
+															<input id="star2" name="rating" value="2" type="radio"><label for="star2"></label>
+															<input id="star1" name="rating" value="1" type="radio"><label for="star1"></label>
+														</div>
+													</div>
+													<button type="submit" class="primary-btn review-btn">Submit</button>
+												</form>
+											</div>
+										</div>
+										<!-- /Review Form -->
+									</div>
+								</div>
+								<!-- /tab2  -->
+							</div>
+							<!-- /film tab content  -->
+						</div>
+					</div>
+					<!-- /film tab -->
+				</div>
+				<!-- /row -->
+			</div>
+			<!-- /container -->
+		</div>
+		<!-- /SECTION -->
+
+		<!-- NEWSLETTER -->
+		<div id="newsletter" class="section">
+			<!-- container -->
+			<div class="container">
+				<!-- row -->
+				<div class="row">
+					<div class="col-md-12">
+						<div class="newsletter">
+							<p>Sign Up for the <strong>NEWSLETTER</strong></p>
+							<form>
+								<input class="input" type="email" placeholder="Enter Your Email">
+								<button class="newsletter-btn"><i class="fa fa-envelope"></i> Subscribe</button>
+							</form>
+							<ul class="newsletter-follow">
+								<li>
+									<a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
+								</li>
+								<li>
+									<a href="https://twitter.com/twitterde?lang=de"><i class="fa fa-twitter"></i></a>
+								</li>
+								<li>
+									<a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- /row -->
+			</div>
+			<!-- /container -->
+		</div>
+		<!-- /NEWSLETTER -->
+
+		<!-- FOOTER -->
+		<footer id="footer">
+			<!-- top footer -->
+			<div class="section">
+				<!-- container -->
+				<div class="container">
+					<!-- row -->
+					<div class="row">
+						<div class="col-md-6 col-xs-6">
+							<div class="footer">
+								<h3 class="footer-title">About Us</h3>
+								<ul class="footer-links">
+									<li><i class="fas fa-desktop"></i>Final Project. Front End Class</li>
+									<li><i class="fas fa-user-graduate"></i>Student - Salawat Arslanow</li>
+									<li><i class="fas fa-chalkboard-teacher"></i>Mentor - Lavanya Khamitkar</li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="col-md-6 col-xs-6">
+							<div class="footer">
+								<h3 class="footer-title">Information</h3>
+								<ul class="footer-links">
+									<li><a href="#"><i class="fa fa-phone"></i>+49 (0)123 456 78 90</a></li>
+									<li><a href="#"><i class="fa fa-envelope-o"></i>hello@hello-example.org</a></li>
+									<li><a href="#"><i class="fa fa-map-marker"></i>Balanstraße  / Haus  / 81541 München</a></li>
+											</ul>
+							</div>
+						</div>
+					</div>					
+					<!-- /row -->
+				</div>
+				<!-- /container -->
+			</div>
+			<!-- /top footer -->			
+		</footer>
+		<!-- /FOOTER -->
+
+		<!-- jQuery Plugins -->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/slick.min.js"></script>
+		<script src="js/nouislider.min.js"></script>
+		<script src="js/main.js"></script>
+		<script src="js/addComments.js"></script>
+		<script src="https://kit.fontawesome.com/15b34fe050.js" crossorigin="anonymous"></script>
+
+	</body>
+</html>

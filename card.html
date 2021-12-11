@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>Final Project. Front End Class.</title>
+
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700" rel="stylesheet">
+		<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css"/>
+		<link type="text/css" rel="stylesheet" href="css/slick.css"/>
+		<link type="text/css" rel="stylesheet" href="css/slick-theme.css"/>
+		<link type="text/css" rel="stylesheet" href="css/nouislider.min.css"/>
+		<link type="text/css" rel="stylesheet" href="css/style.css"/>
+    </head>
+	<body>
+		<!-- HEADER -->
+		<header>
+			<!-- TOP HEADER -->
+			<div id="top-header">
+				<div class="container">
+					<ul class="header-links pull-left">
+						<li><a href="#"><i class="fa fa-phone"></i>+49 (0)123 456 78 90</a></li>
+						<li><a href="#"><i class="fa fa-envelope-o"></i>hello@hello-example.org</a></li>
+						<li><a href="#"><i class="fa fa-map-marker"></i>Balanstraße  / Haus  / 81541 München</a></li>
+					</ul>
+					<ul class="header-links pull-right">
+						<!-- <li><a href="#"><i class="fa fa-dollar"></i> USD</a></li> -->
+						<li><a  href="card.html"><i class="fa fa-user-o"></i> My Account</a></li>
+					</ul>
+				</div>
+			</div>
+			<!-- /TOP HEADER -->
+
+			<!-- MAIN HEADER -->
+			<div id="header">
+				<!-- container -->
+				<div class="container">
+					<!-- row -->
+					<div class="row">
+						<!-- LOGO -->
+						<div class="col-md-3">
+							<div class="header-logo">
+								<a href="index.html" class="logo">
+									<img height="40" width="115" src="https://upload.wikimedia.org/wikipedia/commons/5/52/Free_logo.svg" alt="logo">
+								</a>
+							</div>
+						</div>
+						<!-- /LOGO -->
+
+						<!-- SEARCH BAR -->
+						<div class="col-md-6">
+							<div class="header-search">								
+								<input class="form-control me-2" type="search" placeholder="Search for Movies, Events, Plays, Sports and Activities" aria-label="Search">
+							</div>
+						</div>
+						<!-- /SEARCH BAR -->
+
+						<!-- ACCOUNT -->
+						<div class="col-md-3 clearfix">
+							<div class="header-ctn">
+								<!-- Cart -->
+								<div class="dropdown">
+									<a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
+										<input class="btn primary-btn" type="submit" value="Sign up">
+									</a>
+									<div class="cart-dropdown">
+										<div class="cart-list">
+											<div class="item_form">
+												<h4>New user</h4>							
+												<form class="review-form" name="myForm" action="#" method="GET">
+													<div>
+														<input placeholder="First name:" type="text" id="first_name" name="first_name" required>
+													</div>
+													<div>
+														<input placeholder="Last name:" type="text" id="last_name" name="last_name" required>
+													</div>
+													<div>
+														<input placeholder="E-mail:" type="email" id="email" name="email" required>
+													</div>
+													<div>
+														<input placeholder="Password:" type="password" id="Password" name="Password">
+													</div>
+													<div>
+														<select id="country" name="country">
+															<option value="empty">Country of residence:</option>
+															<option value="deu">Deutschland</option>
+															<option value="rus">Russland</option>
+															<option value="eng">England</option>
+															<option value="som">Somalia</option>
+															<option value="dun">Duna</option>
+														</select>
+													</div>
+													<input id="inptBtn" class=" align-self-center btn primary-btn" type="submit" value="Submit">
+												</form>
+																
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- /Cart -->
+
+								<!-- Menu Toogle -->
+								<div class="menu-toggle">
+									<a href="#">
+										<i class="fa fa-bars"></i>
+										<span>Menu</span>
+									</a>
+								</div>
+								<!-- /Menu Toogle -->
+							</div>
+						</div>
+						<!-- /ACCOUNT -->
+					</div>
+					<!-- row -->
+				</div>
+				<!-- container -->
+			</div>
+			<!-- /MAIN HEADER -->
+		</header>
+		<!-- /HEADER -->
+
+		<!-- NAVIGATION -->
+		<nav id="navigation">
+			<!-- container -->
+			<div class="container">
+				<!-- responsive-nav -->
+				<div id="responsive-nav">
+					<!-- NAV -->
+					<ul class="main-nav nav navbar-nav">
+						<li><a href="index.html">Home</a></li>
+						<li><a href="#">Movies</a></li>
+						<li><a href="#">Stream</a></li>
+						<li><a href="#">Events</a></li>
+						<li><a href="#">Plays</a></li>
+						<li><a href="#">Sports</a></li>
+						<li><a href="#">Activities</a></li>
+						<li><a href="#">Buzz</a></li>
+					</ul>
+					<ul class="main-nav nav navbar-nav pull-right position-relative">
+						<li><a href="#">ListYourShow 
+							<!-- <span class="position-absolute top-0 start-50 badge rounded-pill bg-danger">
+								New
+							</span> -->
+							</a>
+						</li>
+						<li><a href="#">Corporates</a></li>
+						<li><a href="#">Offers</a></li>
+						<li><a href="#">Gift Cards</a></li>
+					</ul>
+					<!-- /NAV -->
+				</div>
+				<!-- /responsive-nav -->
+			</div>
+			<!-- /container -->
+		</nav>
+		<!-- /NAVIGATION -->
+
+		<!-- SECTION -->
+		<div class="section">
+			<!-- container -->
+			<div class="container">
+				<!-- row -->
+				<div class="row">
+					<!-- Photo -->
+					<div class="col-md-5 billing-details">
+						<div class="section-title">
+							<h3 class="title"></h3>
+						</div>
+						<div class="form-group">
+							<img width="350" height="auto" src="https://pixy.org/src/54/542765.jpg" alt="IMG">						
+						</div>
+					</div>
+					<!-- /Photo -->
+
+					<div class="col-md-7">
+						<!-- Account Details -->
+						<div class="billing-details">
+							<div class="section-title">
+								<h3 class="title">Account Info</h3>
+							</div>
+							<div class="form-group">
+								<input class="input" type="text" name="first-name" placeholder="First Name">
+							</div>
+							<div class="form-group">
+								<input class="input" type="text" name="last-name" placeholder="Last Name">
+							</div>
+							<div class="form-group">
+								<input class="input" type="email" name="email" placeholder="Email">
+							</div>
+							<div class="form-group">
+								<input class="input" type="text" name="address" placeholder="Address">
+							</div>
+							<div class="form-group">
+								<input class="input" type="text" name="city" placeholder="City">
+							</div>
+							<div class="form-group">
+								<input class="input" type="text" name="country" placeholder="Country">
+							</div>
+							<div class="form-group">
+								<input class="input" type="text" name="zip-code" placeholder="ZIP Code">
+							</div>
+							<div class="form-group">
+								<input class="input" type="tel" name="tel" placeholder="Telephone">
+							</div>
+							<div class="form-group">
+								<div class="input-checkbox">
+									<input type="checkbox" id="create-account">
+									<label for="create-account">
+										<span></span>
+										Change Info ?
+									</label>
+									<div class="caption">
+										<p>Please inter Your password here.</p>
+										<input class="input" type="password" name="password" placeholder="Enter Your Password">
+										<a  href="#" class="primary-btn info-submit info-submit-btn">Confirm changes</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- /Account Details -->
+					</div>
+				</div>
+				<!-- /row -->
+			</div>
+			<!-- /container -->
+		</div>
+		<!-- /SECTION -->
+
+		<!-- NEWSLETTER -->
+		<div id="newsletter" class="section">
+			<!-- container -->
+			<div class="container">
+				<!-- row -->
+				<div class="row">
+					<div class="col-md-12">
+						<div class="newsletter">
+							<p>Sign Up for the <strong>NEWSLETTER</strong></p>
+							<form>
+								<input class="input" type="email" placeholder="Enter Your Email">
+								<button class="newsletter-btn"><i class="fa fa-envelope"></i> Subscribe</button>
+							</form>
+							<ul class="newsletter-follow">
+								<li>
+									<a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
+								</li>
+								<li>
+									<a href="https://twitter.com/twitterde?lang=de"><i class="fa fa-twitter"></i></a>
+								</li>
+								<li>
+									<a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- /row -->
+			</div>
+			<!-- /container -->
+		</div>
+		<!-- /NEWSLETTER -->
+
+		<!-- FOOTER -->
+		<footer id="footer">
+			<!-- top footer -->
+			<div class="section">
+				<!-- container -->
+				<div class="container">
+					<!-- row -->
+					<div class="row">
+						<div class="col-md-6 col-xs-6">
+							<div class="footer">
+								<h3 class="footer-title">About Us</h3>
+								<ul class="footer-links">
+									<li><i class="fas fa-desktop"></i>Final Project. Front End Class</li>
+									<li><i class="fas fa-user-graduate"></i>Student - Salawat Arslanow</li>
+									<li><i class="fas fa-chalkboard-teacher"></i>Mentor - Lavanya Khamitkar</li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="col-md-6 col-xs-6">
+							<div class="footer">
+								<h3 class="footer-title">Information</h3>
+								<ul class="footer-links">
+									<li><a href="#"><i class="fa fa-phone"></i>+49 (0)123 456 78 90</a></li>
+									<li><a href="#"><i class="fa fa-envelope-o"></i>hello@hello-example.org</a></li>
+									<li><a href="#"><i class="fa fa-map-marker"></i>Balanstraße  / Haus  / 81541 München</a></li>
+											</ul>
+							</div>
+						</div>
+					</div>					
+					<!-- /row -->
+				</div>
+				<!-- /container -->
+			</div>
+			<!-- /top footer -->			
+		</footer>
+		<!-- /FOOTER -->
+
+		<!-- js Plugins -->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/slick.min.js"></script>
+		<script src="js/nouislider.min.js"></script>
+		<script src="js/main.js"></script>
+		<script src="js/myAccInfo.js"></script>
+		<script src="https://kit.fontawesome.com/15b34fe050.js" crossorigin="anonymous"></script>
+
+	</body>
+</html>
